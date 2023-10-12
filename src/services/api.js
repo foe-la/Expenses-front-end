@@ -23,13 +23,13 @@ export const editExpense = (id, updatedExpense) => {
     return response
 }
 // Create the Expense
-export const createTodo = (Expense) => {
+export const createExpense = (Expense) => {
     const URL = baseURL
     const response = axios.post(URL, Expense)
     return response
 }
 // Delete the Expense
-export const deleteNote = (id) => {
+export const deleteExpense = (id) => {
     const URL = `${baseURL}/${id}`
     const response = axios.delete(URL)
     return response
